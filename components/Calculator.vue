@@ -9,7 +9,7 @@
       </div>
     </div>
     <Range
-      :max="3"
+      :max="4"
       :value="state.uncertainty"
       name="Uncertainty"
       start-label="I know exactly what to do"
@@ -18,7 +18,7 @@
       @change="handleUncertaintyChange"
     />
     <Range
-      :max="3"
+      :max="4"
       :value="state.effort"
       name="Effort"
       start-label="It takes no effort"
@@ -27,15 +27,15 @@
       @change="handleEffortChange"
     />
     <Range
-      :max="3"
+      :max="4"
       :value="state.complexity"
       name="Complexity"
-      start-label="Simple as 2 + 2"
-      end-label="Will have to create matrix"
+      start-label="Low Complexity"
+      end-label="High Complexity"
       class-name="mt-5"
       @change="handleComplexityChange"
     />
-    <div class="flex flex-row-reverse mt-5">
+    <div class="flex justify-center mt-10">
       <div class="flex-initial w-64">
         <Button
           class-name="mt-3"

@@ -3,20 +3,21 @@
     :for="`range-${name}`"
     :class="`${className || ''} block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300`"
   >
-    {{ name }}
     <span class="flex">
       <span class="flex-initial w-2/5">{{ startLabel }}</span>
       <input
         :id="`range-${name}`"
         type="range"
+        :name="name"
+        :title="name"
         :value="value"
         :max="max"
         min="1"
         class="w-full h-2 bg-gray-200 rounded-lg cursor-pointer dark:bg-gray-700 mx-3 mt-2"
-        list="tickmarks"
+        list="tick-marks"
         @input="handleChange"
       >
-      <datalist id="tickmarks">
+      <datalist id="tick-marks">
         <option
           v-for="item in options"
           :key="item"
