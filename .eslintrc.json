@@ -1,0 +1,6 @@
+{
+    "extends": [
+        "plugin:vue/base",
+        "@vue/eslint-config-typescript"
+    ]
+}

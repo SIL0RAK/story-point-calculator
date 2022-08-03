@@ -23,7 +23,7 @@
 
 <script setup lang="ts">
 defineProps<{
-  name: string;
+  name: string
 }>()
 
 defineEmits<{(event: 'click'): void }>()
