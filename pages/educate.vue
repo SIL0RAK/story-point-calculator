@@ -1,8 +1,5 @@
 <template>
-  <div class="dark:text-gray-300">
-    <h1 class="text-3xl">
-      Story about Story points
-    </h1>
+  <Container title="Story about Story points">
     <div class="absolute top-5 right-16">
       <NuxtLink to="/">
         <img
@@ -13,7 +10,15 @@
         >
       </NuxtLink>
     </div>
-    <Article title="Complexity" class-name="mt-3">
+    <Article title="Complexity">
+      <template v-slot:title-image>
+        <img
+          alias="Complexity"
+          title="Complexity"
+          class="w-8 h-8"
+          src="~assets/complexity.svg"
+        >
+      </template>
       How many tricky algorithms or query's you will have to write.
       <p class="mt-3">
         <b>Example:</b>
@@ -27,7 +32,15 @@
       </p>
     </Article>
 
-    <Article title="Effort" class-name="mt-3">
+    <Article title="Effort">
+      <template v-slot:title-image>
+        <img
+          alias="Effort"
+          title="Effort"
+          class="w-8 h-8"
+          src="~assets/hammer.svg"
+        >
+      </template>
       <p class="mt-3">
         <b>Example:</b>
         <ul class="list-disc pl-5 mt-3">
@@ -39,7 +52,15 @@
       </p>
     </Article>
 
-    <Article title="Uncertainty" class-name="mt-3">
+    <Article title="Uncertainty">
+      <template v-slot:title-image>
+        <img
+          alias="Uncertainty"
+          title="Uncertainty"
+          class="w-8 h-8"
+          src="~assets/question.svg"
+        >
+      </template>
       <p class="mt-3">
         <b>Example:</b>
         <ul class="list-disc pl-5 mt-3">
@@ -52,5 +73,5 @@
         In second example you are not sure what how/where changes needs to be done so Uncertainty is high.
       </p>
     </Article>
-  </div>
+  </Container>
 </template>

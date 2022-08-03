@@ -1,8 +1,5 @@
 <template>
-  <div>
-    <h1 class="text-3xl dark:text-gray-300">
-      Calculate story points
-    </h1>
+  <Container title="Calculate story points">
     <div class="absolute top-5 right-16">
       <NuxtLink to="/educate">
         <img
@@ -14,5 +11,5 @@
       </NuxtLink>
     </div>
     <Calculator />
-  </div>
+  </Container>
 </template>
