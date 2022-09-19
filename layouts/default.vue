@@ -73,7 +73,6 @@ useHead({
   },
   meta: [
     { name: 'description', content: 'Best practice to calculate story points' },
-    { name: 'author', content: 'Karolis Krusinskas and Kamile Sukackaite'},
     { name: 'keywords', content: 'scrum, agile, story points,'},
     { name: 'description', content: 'Calculate story points from Uncertainty, Effort and Complexity' }
   ]
