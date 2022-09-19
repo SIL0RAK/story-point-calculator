@@ -1,6 +1,7 @@
-# Nuxt 3 Minimal Starter
+# Educational story points calculator
 
-Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
+Estimations can be hard, realy hard thats why we have this project.
+Story point estimation should consist of three main parts: Complexity, Effort, Certainty.
 
 ## Setup
 
@@ -38,5 +39,3 @@ Locally preview production build:
 ```bash
 npm run preview
 ```
-
-Checkout the [deployment documentation](https://v3.nuxtjs.org/guide/deploy/presets) for more information.
