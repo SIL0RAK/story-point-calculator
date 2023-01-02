@@ -62,22 +62,6 @@ onMounted(() => {
     turnOffDarkMode()
   }
 })
-
-// head config
-useHead({
- title: 'Story point calculator',
-  viewport: 'width=device-width, initial-scale=1, maximum-scale=5',
-  charset: 'utf-8',
-  htmlAttrs: {
-    lang: 'en'
-  },
-  meta: [
-    { name: 'description', content: 'Best practice to calculate story points' },
-    { name: 'keywords', content: 'scrum, agile, story points,'},
-    { name: 'description', content: 'Calculate story points from Uncertainty, Effort and Complexity' }
-  ]
-})
-
 </script>
 
 <style>

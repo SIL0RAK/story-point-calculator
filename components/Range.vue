@@ -1,7 +1,7 @@
 <template>
   <label
     :for="`range-${name}`"
-    :class="`${className || ''} block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300`"
+    class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
   >
     <span class="flex">
       <span class="flex-initial w-2/5">{{ startLabel }}</span>
@@ -38,7 +38,6 @@ interface Props {
   max: number;
   startLabel?: string;
   endLabel?: string;
-  className?: string;
 }
 
 const props = defineProps<Props>()

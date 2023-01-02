@@ -14,7 +14,7 @@
       name="Uncertainty"
       start-label="I know exactly what to do"
       end-label="No Idea what to do"
-      class-name="mt-5"
+      class="mt-5"
       @change="handleUncertaintyChange"
     />
     <Range
@@ -23,7 +23,7 @@
       name="Effort"
       start-label="It takes no effort"
       end-label="It will take a lot of effort"
-      class-name="mt-5"
+      class="mt-5"
       @change="handleEffortChange"
     />
     <Range
@@ -32,13 +32,13 @@
       name="Complexity"
       start-label="Low Complexity"
       end-label="High Complexity"
-      class-name="mt-5"
+      class="mt-5"
       @change="handleComplexityChange"
     />
     <div class="flex justify-center mt-10">
       <div class="flex-initial w-64">
         <Button
-          class-name="mt-3"
+          class="mt-3"
           name="Reset"
           @click="resetState"
         />

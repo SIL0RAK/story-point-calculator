@@ -1,18 +1,10 @@
-import { defineNuxtConfig } from 'nuxt'
-
-// https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
     typescript: {
       strict: true
     },
   
-    buildModules: [
-      '@nuxtjs/stylelint-module',
-    ],
-  
     modules: [
       '@nuxtjs/tailwindcss',
-      '@nuxtjs/svg',
       '@kevinmarrec/nuxt-pwa'
     ],
 
@@ -24,6 +16,22 @@ export default defineNuxtConfig({
       },
       workbox: {
         enabled: true
+      }
+    },
+
+    app: {
+      head: {
+        title: 'Story point calculator',
+        viewport: 'width=device-width, initial-scale=1, maximum-scale=5',
+        charset: 'utf-8',     
+        htmlAttrs: {
+          lang: 'en'
+        },
+        meta: [
+          { name: 'description', content: 'Best practice to calculate story points' },
+          { name: 'keywords', content: 'scrum, agile, story points,'},
+          { name: 'description', content: 'Calculate story points from Uncertainty, Effort and Complexity' }
+        ]
       }
     }
   })
