@@ -20,7 +20,7 @@ export default defineNuxtConfig({
     },
 
     app: {
-      baseURL: process.env.BASE_URL,
+      baseURL: process.env.BASE_URL || 'https://sil0rak.github.io/story-point-calculator/',
       head: {
         title: 'Story point calculator',
         viewport: 'width=device-width, initial-scale=1, maximum-scale=5',
