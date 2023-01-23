@@ -20,6 +20,7 @@ export default defineNuxtConfig({
     },
 
     app: {
+      baseURL: '/story-point-calculator/',
       head: {
         title: 'Story point calculator',
         viewport: 'width=device-width, initial-scale=1, maximum-scale=5',
