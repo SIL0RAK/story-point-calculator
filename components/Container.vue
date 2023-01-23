@@ -9,8 +9,13 @@
 
 <script setup lang="ts">
 interface Props {
-  title: String;
+  title: string;
 }
 
-defineProps<Props>();
+const props = defineProps<Props>();
+
+useHead(() => ({
+  title: props.title
+}))
+
 </script>

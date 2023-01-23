@@ -22,7 +22,6 @@ export default defineNuxtConfig({
     app: {
       baseURL: '/story-point-calculator/',
       head: {
-        title: 'Story point calculator',
         viewport: 'width=device-width, initial-scale=1, maximum-scale=5',
         charset: 'utf-8',     
         htmlAttrs: {
@@ -31,7 +30,6 @@ export default defineNuxtConfig({
         meta: [
           { name: 'description', content: 'Best practice to calculate story points' },
           { name: 'keywords', content: 'scrum, agile, story points,'},
-          { name: 'description', content: 'Calculate story points from Uncertainty, Effort and Complexity' }
         ]
       }
     }
