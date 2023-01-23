@@ -31,7 +31,7 @@ jobs:
       - name: Make envfile
         uses: SpicyPizza/create-envfile@v1.3
         with:
-          envkey_BASE_URL: ${{ steps.deployment.outputs.page_url }}
+          envkey_BASE_URL: https://sil0rak.github.io/story-point-calculator/
       - name: Checkout
         uses: actions/checkout@v3
       - name: Detect package manager
