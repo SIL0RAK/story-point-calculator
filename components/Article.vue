@@ -6,9 +6,7 @@
         {{ title }}
       </h2>
     </div>
-    <div>
-      <slot />
-    </div>
+    <slot name="content" />
   </article>
 </template>
 
