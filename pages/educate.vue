@@ -79,5 +79,17 @@
         </p>
       </template>
     </Article>
+
+    <div>
+      <p class="mt-3">
+          <b>Example:</b>
+          <ul class="list-disc pl-5 mt-3">
+            <li>Task requires to update service in controller (low effort).</li>
+            <li>Task requires to update same service in 4 different repositories (high effort).</li>
+          </ul>
+          <br>
+          Both of these tasks have same Complexity, but requires different Effort.
+        </p>
+    </div>
   </Container>
 </template>
